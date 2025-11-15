@@ -1,0 +1,181 @@
+[
+  {
+    "_type": "order",
+    "_id": "order-001",
+    "orderId": "QB001",
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "restaurant-pizzahut-001"
+    },
+    "items": [
+      {
+        "dish": "Margherita Pizza",
+        "dishId": "pizza-margherita",
+        "quantity": 2,
+        "unitPrice": 150000,
+        "totalPrice": 300000,
+        "specialInstructions": "Extra cheese, no onions"
+      },
+      {
+        "dish": "Coca Cola",
+        "dishId": "drink-coca",
+        "quantity": 2,
+        "unitPrice": 25000,
+        "totalPrice": 50000,
+        "specialInstructions": ""
+      }
+    ],
+    "totalAmount": 350000,
+    "deliveryFee": 15000,
+    "finalAmount": 365000,
+    "paymentMethod": "card",
+    "deliveryAddress": {
+      "street": "123 Nguyễn Huệ, P.Bến Nghé",
+      "city": "Hồ Chí Minh",
+      "district": "Quận 1",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7769,
+        "lng": 106.7009
+      },
+      "contactPhone": "+84912345678",
+      "deliveryNotes": "Tầng 5, văn phòng ABC"
+    },
+    "status": "processing",
+    "orderTime": "2024-11-15T11:50:00Z",
+    "estimatedDeliveryTime": "2024-11-15T12:35:00Z",
+    "actualDeliveryTime": null,
+    "assignedDrone": {
+      "_type": "reference",
+      "_ref": "drone-002"
+    },
+    "droneOperator": {
+      "_type": "reference",
+      "_ref": "user-operator-001"
+    },
+    "trackingInfo": {
+      "pickupTime": "2024-11-15T12:15:00Z",
+      "estimatedArrival": "2024-11-15T12:35:00Z",
+      "currentLocation": {
+        "_type": "geopoint",
+        "lat": 10.7743,
+        "lng": 106.7038
+      }
+    },
+    "customerNotes": "Please ring the doorbell twice"
+  },
+  {
+    "_type": "order",
+    "_id": "order-002",
+    "orderId": "QB002", 
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "restaurant-pizzahut-001"
+    },
+    "items": [
+      {
+        "dish": "Beef Burger",
+        "dishId": "burger-beef",
+        "quantity": 1,
+        "unitPrice": 120000,
+        "totalPrice": 120000,
+        "specialInstructions": "Medium rare"
+      }
+    ],
+    "totalAmount": 120000,
+    "deliveryFee": 12000,
+    "finalAmount": 132000,
+    "paymentMethod": "cod",
+    "deliveryAddress": {
+      "street": "789 Võ Văn Tần, P.6",
+      "city": "Hồ Chí Minh",
+      "district": "Quận 3",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7829,
+        "lng": 106.6934
+      },
+      "contactPhone": "+84987654321",
+      "deliveryNotes": "Apartment 3A"
+    },
+    "status": "new_order",
+    "orderTime": "2024-11-15T11:00:00Z",
+    "estimatedDeliveryTime": "2024-11-15T11:45:00Z",
+    "actualDeliveryTime": null,
+    "assignedDrone": null,
+    "droneOperator": null,
+    "trackingInfo": null,
+    "customerNotes": ""
+  },
+  {
+    "_type": "order",
+    "_id": "order-003",
+    "orderId": "QB003",
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "restaurant-pizzahut-001"
+    },
+    "items": [
+      {
+        "dish": "Pad Thai",
+        "dishId": "asian-padthai",
+        "quantity": 3,
+        "unitPrice": 85000,
+        "totalPrice": 255000,
+        "specialInstructions": "Spicy level 2"
+      }
+    ],
+    "totalAmount": 255000,
+    "deliveryFee": 18000,
+    "finalAmount": 273000,
+    "paymentMethod": "wallet",
+    "deliveryAddress": {
+      "street": "456 Lê Lợi, P.Bến Thành", 
+      "city": "Hồ Chí Minh",
+      "district": "Quận 1",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7758,
+        "lng": 106.7017
+      },
+      "contactPhone": "+84912345678",
+      "deliveryNotes": "Reception desk, ask for Mr. An"
+    },
+    "status": "delivered",
+    "orderTime": "2024-11-14T19:30:00Z",
+    "estimatedDeliveryTime": "2024-11-14T20:15:00Z",
+    "actualDeliveryTime": "2024-11-14T20:12:00Z",
+    "assignedDrone": {
+      "_type": "reference",
+      "_ref": "drone-001"
+    },
+    "droneOperator": {
+      "_type": "reference",
+      "_ref": "user-operator-001"
+    },
+    "trackingInfo": {
+      "pickupTime": "2024-11-14T19:55:00Z",
+      "estimatedArrival": "2024-11-14T20:15:00Z",
+      "currentLocation": {
+        "_type": "geopoint",
+        "lat": 10.7758,
+        "lng": 106.7017
+      }
+    },
+    "customerNotes": "Leave at reception if no one answers",
+    "rating": 5,
+    "feedback": "Excellent service! Food arrived hot and fresh."
+  }
+]

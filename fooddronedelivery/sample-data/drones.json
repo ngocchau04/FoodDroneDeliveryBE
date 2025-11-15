@@ -1,0 +1,167 @@
+[
+  {
+    "_type": "drone",
+    "_id": "drone-001",
+    "droneId": "DRN001",
+    "name": "Eagle Swift",
+    "model": "DJI Matrice 300",
+    "status": "available",
+    "batteryLevel": 95,
+    "currentLocation": {
+      "_type": "geopoint",
+      "lat": 10.7769,
+      "lng": 106.7009
+    },
+    "baseStation": {
+      "_type": "geopoint", 
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "maxPayload": 5.0,
+    "maxRange": 15.0,
+    "specifications": {
+      "weight": 3.6,
+      "maxSpeed": 23.0,
+      "flightTime": 55,
+      "weatherResistance": "IP45",
+      "camera": "Zenmuse H20T"
+    },
+    "isActive": true,
+    "lastMaintenance": "2024-11-01T08:00:00Z",
+    "nextMaintenance": "2024-12-01T08:00:00Z",
+    "totalFlightHours": 245.5,
+    "totalDeliveries": 1250
+  },
+  {
+    "_type": "drone",
+    "_id": "drone-002", 
+    "droneId": "DRN002",
+    "name": "Hawk Thunder",
+    "model": "DJI Matrice 350",
+    "status": "in_transit",
+    "batteryLevel": 78,
+    "currentLocation": {
+      "_type": "geopoint",
+      "lat": 10.7743,
+      "lng": 106.7038
+    },
+    "baseStation": {
+      "_type": "geopoint",
+      "lat": 10.7796, 
+      "lng": 106.6975
+    },
+    "maxPayload": 6.0,
+    "maxRange": 18.0,
+    "specifications": {
+      "weight": 4.2,
+      "maxSpeed": 25.0,
+      "flightTime": 45,
+      "weatherResistance": "IP55",
+      "camera": "Zenmuse H20N"
+    },
+    "isActive": true,
+    "lastMaintenance": "2024-10-15T10:30:00Z",
+    "nextMaintenance": "2024-11-15T10:30:00Z",
+    "totalFlightHours": 189.2,
+    "totalDeliveries": 987
+  },
+  {
+    "_type": "drone",
+    "_id": "drone-003",
+    "droneId": "DRN003", 
+    "name": "Phoenix Rider",
+    "model": "DJI Matrice 300",
+    "status": "charging",
+    "batteryLevel": 25,
+    "currentLocation": {
+      "_type": "geopoint",
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "baseStation": {
+      "_type": "geopoint",
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "maxPayload": 5.0,
+    "maxRange": 15.0,
+    "specifications": {
+      "weight": 3.6,
+      "maxSpeed": 23.0,
+      "flightTime": 55,
+      "weatherResistance": "IP45",
+      "camera": "Zenmuse H20T"
+    },
+    "isActive": true,
+    "lastMaintenance": "2024-11-10T14:20:00Z", 
+    "nextMaintenance": "2024-12-10T14:20:00Z",
+    "totalFlightHours": 312.8,
+    "totalDeliveries": 1567
+  },
+  {
+    "_type": "drone",
+    "_id": "drone-004",
+    "droneId": "DRN004",
+    "name": "Storm Falcon",
+    "model": "Custom Heavy Lift",
+    "status": "maintenance",
+    "batteryLevel": 0,
+    "currentLocation": {
+      "_type": "geopoint",
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "baseStation": {
+      "_type": "geopoint",
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "maxPayload": 8.0,
+    "maxRange": 12.0,
+    "specifications": {
+      "weight": 5.8,
+      "maxSpeed": 20.0,
+      "flightTime": 35,
+      "weatherResistance": "IP65",
+      "camera": "Custom 4K"
+    },
+    "isActive": false,
+    "lastMaintenance": "2024-11-14T16:00:00Z",
+    "nextMaintenance": "2024-11-20T09:00:00Z", 
+    "totalFlightHours": 156.3,
+    "totalDeliveries": 623
+  },
+  {
+    "_type": "drone",
+    "_id": "drone-005",
+    "droneId": "DRN005",
+    "name": "Lightning Dash",
+    "model": "DJI Matrice 350",
+    "status": "available",
+    "batteryLevel": 100,
+    "currentLocation": {
+      "_type": "geopoint",
+      "lat": 10.7829,
+      "lng": 106.6934
+    },
+    "baseStation": {
+      "_type": "geopoint",
+      "lat": 10.7796,
+      "lng": 106.6975
+    },
+    "maxPayload": 6.0,
+    "maxRange": 18.0,
+    "specifications": {
+      "weight": 4.2,
+      "maxSpeed": 25.0,
+      "flightTime": 45,
+      "weatherResistance": "IP55",
+      "camera": "Zenmuse H20N"
+    },
+    "isActive": true,
+    "lastMaintenance": "2024-11-12T12:00:00Z",
+    "nextMaintenance": "2024-12-12T12:00:00Z",
+    "totalFlightHours": 87.4,
+    "totalDeliveries": 445
+  }
+]

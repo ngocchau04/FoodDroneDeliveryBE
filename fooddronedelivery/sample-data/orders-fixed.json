@@ -1,0 +1,194 @@
+[
+  {
+    "_type": "order",
+    "_id": "order-001",
+    "orderId": "QB001",
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "8a9b4975-de30-4896-84df-8274680b91ff"
+    },
+    "items": [
+      {
+        "_key": "item-001-1",
+        "dish": "Margherita Marvel",
+        "dishId": "9cd167bb-e15e-48a2-aedb-1b62798f0693",
+        "quantity": 2,
+        "unitPrice": 150000,
+        "totalPrice": 300000,
+        "specialInstructions": "Extra cheese, no onions"
+      },
+      {
+        "_key": "item-001-2",
+        "dish": "Pepperoni Paradise",
+        "dishId": "f40d64ef-2246-49b1-ab47-207a976c2afa", 
+        "quantity": 1,
+        "unitPrice": 180000,
+        "totalPrice": 180000,
+        "specialInstructions": "Spicy"
+      }
+    ],
+    "totalAmount": 480000,
+    "deliveryFee": 15000,
+    "finalAmount": 495000,
+    "paymentMethod": "card",
+    "deliveryAddress": {
+      "street": "123 Nguyễn Huệ, P.Bến Nghé",
+      "city": "Hồ Chí Minh",
+      "district": "Quận 1",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7769,
+        "lng": 106.7009
+      },
+      "contactPhone": "+84912345678",
+      "deliveryNotes": "Tầng 5, văn phòng ABC"
+    },
+    "status": "processing",
+    "orderTime": "2024-11-15T11:50:00Z",
+    "estimatedDeliveryTime": "2024-11-15T12:35:00Z",
+    "actualDeliveryTime": null,
+    "assignedDrone": {
+      "_type": "reference",
+      "_ref": "drone-002"
+    },
+    "droneOperator": {
+      "_type": "reference",
+      "_ref": "user-operator-001"
+    },
+    "trackingInfo": {
+      "pickupTime": "2024-11-15T12:15:00Z",
+      "estimatedArrival": "2024-11-15T12:35:00Z",
+      "currentLocation": {
+        "_type": "geopoint",
+        "lat": 10.7743,
+        "lng": 106.7038
+      }
+    },
+    "customerNotes": "Please ring the doorbell twice"
+  },
+  {
+    "_type": "order",
+    "_id": "order-002",
+    "orderId": "QB002", 
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "8a9b4975-de30-4896-84df-8274680b91ff"
+    },
+    "items": [
+      {
+        "_key": "item-002-1",
+        "dish": "Hawaiian Heaven",
+        "dishId": "5d846ad2-90db-416b-941b-46ae58a192bc",
+        "quantity": 1,
+        "unitPrice": 165000,
+        "totalPrice": 165000,
+        "specialInstructions": "Extra pineapple"
+      }
+    ],
+    "totalAmount": 165000,
+    "deliveryFee": 12000,
+    "finalAmount": 177000,
+    "paymentMethod": "cod",
+    "deliveryAddress": {
+      "street": "789 Võ Văn Tần, P.6",
+      "city": "Hồ Chí Minh",
+      "district": "Quận 3",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7829,
+        "lng": 106.6934
+      },
+      "contactPhone": "+84987654321",
+      "deliveryNotes": "Apartment 3A"
+    },
+    "status": "new_order",
+    "orderTime": "2024-11-15T11:00:00Z",
+    "estimatedDeliveryTime": "2024-11-15T11:45:00Z",
+    "actualDeliveryTime": null,
+    "assignedDrone": null,
+    "droneOperator": null,
+    "trackingInfo": null,
+    "customerNotes": ""
+  },
+  {
+    "_type": "order",
+    "_id": "order-003",
+    "orderId": "QB003",
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "restaurant": {
+      "_type": "reference",
+      "_ref": "ec251bed-2c96-4628-8abf-02e94936d5fb"
+    },
+    "items": [
+      {
+        "_key": "item-003-1",
+        "dish": "Sakura Blossom Sashimi",
+        "dishId": "628e4e15-9dca-44ea-89e2-3f058635d6d6",
+        "quantity": 2,
+        "unitPrice": 320000,
+        "totalPrice": 640000,
+        "specialInstructions": "Fresh wasabi"
+      },
+      {
+        "_key": "item-003-2",
+        "dish": "Edamame Emerald Delight", 
+        "dishId": "3843270b-4286-44ae-8f19-a56bf3f8e7a3",
+        "quantity": 1,
+        "unitPrice": 85000,
+        "totalPrice": 85000,
+        "specialInstructions": ""
+      }
+    ],
+    "totalAmount": 725000,
+    "deliveryFee": 18000,
+    "finalAmount": 743000,
+    "paymentMethod": "wallet",
+    "deliveryAddress": {
+      "street": "456 Lê Lợi, P.Bến Thành", 
+      "city": "Hồ Chí Minh",
+      "district": "Quận 1",
+      "coordinates": {
+        "_type": "geopoint",
+        "lat": 10.7758,
+        "lng": 106.7017
+      },
+      "contactPhone": "+84912345678",
+      "deliveryNotes": "Reception desk, ask for Mr. An"
+    },
+    "status": "delivered",
+    "orderTime": "2024-11-14T19:30:00Z",
+    "estimatedDeliveryTime": "2024-11-14T20:15:00Z",
+    "actualDeliveryTime": "2024-11-14T20:12:00Z",
+    "assignedDrone": {
+      "_type": "reference",
+      "_ref": "drone-001"
+    },
+    "droneOperator": {
+      "_type": "reference",
+      "_ref": "user-operator-001"
+    },
+    "trackingInfo": {
+      "pickupTime": "2024-11-14T19:55:00Z",
+      "estimatedArrival": "2024-11-14T20:15:00Z",
+      "currentLocation": {
+        "_type": "geopoint",
+        "lat": 10.7758,
+        "lng": 106.7017
+      }
+    },
+    "customerNotes": "Leave at reception if no one answers",
+    "rating": 5,
+    "feedback": "Excellent service! Food arrived hot and fresh."
+  }
+]

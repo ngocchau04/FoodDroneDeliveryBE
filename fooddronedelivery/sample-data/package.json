@@ -1,0 +1,19 @@
+{
+  "name": "food-drone-sample-data",
+  "version": "1.0.0",
+  "description": "Sample data for Food Drone Delivery Backend",
+  "main": "import-all.js",
+  "scripts": {
+    "import": "node import-all.js",
+    "import:users": "sanity dataset import users.json production --replace",
+    "import:restaurants": "sanity dataset import restaurants.json production --replace",
+    "import:drones": "sanity dataset import drones.json production --replace", 
+    "import:orders": "sanity dataset import orders.json production --replace",
+    "import:payments": "sanity dataset import payments.json production --replace",
+    "import:notifications": "sanity dataset import notifications.json production --replace"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.0.0",
+    "dotenv": "^16.3.1"
+  }
+}

@@ -6,9 +6,26 @@ import dish from './dish'
 import restaurant from './restaurant'
 import category from './category'
 import featured from './featured'
+import user from './user'
+import order from './order'
+import drone from './drone'
+import payment from './payment'
+import notification from './notification'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [dish, restaurant, category, featured],
+  types: [
+    // Original schemas
+    dish, 
+    restaurant, 
+    category, 
+    featured,
+    // New schemas for complete system
+    user,
+    order,
+    drone,
+    payment,
+    notification
+  ],
 }
 
 

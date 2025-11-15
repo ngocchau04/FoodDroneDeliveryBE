@@ -1,0 +1,46 @@
+[
+  {
+    "_type": "restaurant",
+    "_id": "restaurant-pizzahut-001",
+    "name": "Pizza Hut",
+    "image": {
+      "_type": "image",
+      "asset": {
+        "_type": "reference",
+        "_ref": "image-placeholder"
+      }
+    },
+    "short_description": "Delicious pizza and Italian cuisine delivered fresh by drone",
+    "address": "100 Đồng Khởi, P.Bến Nghé, Quận 1, TP.HCM",
+    "phone": "+84-28-3824-5678",
+    "email": "pizzahut.dongkhoi@pizza.vn",
+    "rating": 4.5,
+    "deliveryTime": "25-30 minutes",
+    "coordinates": {
+      "_type": "geopoint",
+      "lat": 10.7743,
+      "lng": 106.7038
+    },
+    "categories": [
+      {
+        "_type": "reference",
+        "_ref": "category-italian"
+      },
+      {
+        "_type": "reference", 
+        "_ref": "category-pizza"
+      }
+    ],
+    "operatingHours": {
+      "monday": "10:00-22:00",
+      "tuesday": "10:00-22:00", 
+      "wednesday": "10:00-22:00",
+      "thursday": "10:00-22:00",
+      "friday": "10:00-23:00",
+      "saturday": "10:00-23:00",
+      "sunday": "10:00-22:00"
+    },
+    "isActive": true,
+    "isPartner": true
+  }
+]

@@ -1,0 +1,179 @@
+[
+  {
+    "_type": "user",
+    "_id": "user-customer-001",
+    "fullName": "Nguyễn Văn An",
+    "email": "nguyenvanan@gmail.com",
+    "phone": "+84912345678",
+    "role": "customer",
+    "addresses": [
+      {
+        "label": "Nhà riêng",
+        "street": "123 Nguyễn Huệ, P.Bến Nghé",
+        "city": "Hồ Chí Minh",
+        "district": "Quận 1",
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7769,
+          "lng": 106.7009
+        },
+        "isDefault": true
+      },
+      {
+        "label": "Văn phòng",
+        "street": "456 Lê Lợi, P.Bến Thành",
+        "city": "Hồ Chí Minh",
+        "district": "Quận 1",
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7758,
+          "lng": 106.7017
+        },
+        "isDefault": false
+      }
+    ],
+    "preferences": {
+      "preferredPayment": "card",
+      "notifications": {
+        "orderUpdates": true,
+        "promotions": true,
+        "droneTracking": true
+      }
+    },
+    "isActive": true,
+    "joinDate": "2024-01-15T08:30:00Z",
+    "lastLogin": "2024-11-15T10:00:00Z"
+  },
+  {
+    "_type": "user",
+    "_id": "user-customer-002", 
+    "fullName": "Trần Thị Bình",
+    "email": "tranthibinh@gmail.com",
+    "phone": "+84987654321",
+    "role": "customer",
+    "addresses": [
+      {
+        "label": "Nhà riêng",
+        "street": "789 Võ Văn Tần, P.6",
+        "city": "Hồ Chí Minh", 
+        "district": "Quận 3",
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7829,
+          "lng": 106.6934
+        },
+        "isDefault": true
+      }
+    ],
+    "preferences": {
+      "preferredPayment": "cod",
+      "notifications": {
+        "orderUpdates": true,
+        "promotions": false,
+        "droneTracking": true
+      }
+    },
+    "isActive": true,
+    "joinDate": "2024-02-20T09:15:00Z",
+    "lastLogin": "2024-11-14T16:30:00Z"
+  },
+  {
+    "_type": "user",
+    "_id": "user-restaurant-001",
+    "fullName": "Lê Minh Châu",
+    "email": "leminhchau@pizzahut.com",
+    "phone": "+84901234567",
+    "role": "restaurant",
+    "addresses": [
+      {
+        "label": "Pizza Hut Store",
+        "street": "100 Đồng Khởi, P.Bến Nghé",
+        "city": "Hồ Chí Minh",
+        "district": "Quận 1", 
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7743,
+          "lng": 106.7038
+        },
+        "isDefault": true
+      }
+    ],
+    "preferences": {
+      "preferredPayment": "bank",
+      "notifications": {
+        "orderUpdates": true,
+        "promotions": false,
+        "droneTracking": true
+      }
+    },
+    "isActive": true,
+    "joinDate": "2024-01-10T07:00:00Z",
+    "lastLogin": "2024-11-15T08:45:00Z"
+  },
+  {
+    "_type": "user",
+    "_id": "user-admin-001",
+    "fullName": "Phạm Thành Long",
+    "email": "admin@fooddrone.com",
+    "phone": "+84912000000",
+    "role": "admin",
+    "addresses": [
+      {
+        "label": "Head Office",
+        "street": "200 Nam Kỳ Khởi Nghĩa, P.7",
+        "city": "Hồ Chí Minh",
+        "district": "Quận 3",
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7891,
+          "lng": 106.6917
+        },
+        "isDefault": true
+      }
+    ],
+    "preferences": {
+      "preferredPayment": "bank",
+      "notifications": {
+        "orderUpdates": true,
+        "promotions": true,
+        "droneTracking": true
+      }
+    },
+    "isActive": true,
+    "joinDate": "2023-12-01T00:00:00Z",
+    "lastLogin": "2024-11-15T07:00:00Z"
+  },
+  {
+    "_type": "user",
+    "_id": "user-operator-001",
+    "fullName": "Võ Văn Đức",
+    "email": "operator@fooddrone.com",
+    "phone": "+84903000000",
+    "role": "operator",
+    "addresses": [
+      {
+        "label": "Drone Control Center",
+        "street": "50 Pasteur, P.Nguyễn Thái Bình",
+        "city": "Hồ Chí Minh", 
+        "district": "Quận 1",
+        "coordinates": {
+          "_type": "geopoint",
+          "lat": 10.7796,
+          "lng": 106.6975
+        },
+        "isDefault": true
+      }
+    ],
+    "preferences": {
+      "preferredPayment": "bank",
+      "notifications": {
+        "orderUpdates": true,
+        "promotions": false,
+        "droneTracking": true
+      }
+    },
+    "isActive": true,
+    "joinDate": "2024-01-05T06:00:00Z",
+    "lastLogin": "2024-11-15T06:30:00Z"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "_type": "payment",
+    "_id": "payment-001",
+    "paymentId": "PAY001", 
+    "order": {
+      "_type": "reference",
+      "_ref": "order-001"
+    },
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "amount": 365000,
+    "method": "card",
+    "status": "processing",
+    "currency": "VND",
+    "transactionDetails": {
+      "cardType": "Visa",
+      "cardLastFour": "4532",
+      "authorizationCode": "AUTH123456",
+      "gatewayTransactionId": "TXN_VIS_365000_20241115",
+      "processorResponse": "Approved"
+    },
+    "createdAt": "2024-11-15T11:52:00Z",
+    "processedAt": null,
+    "failureReason": null,
+    "refundAmount": 0,
+    "fees": {
+      "processingFee": 10950,
+      "platformFee": 7300
+    }
+  },
+  {
+    "_type": "payment",
+    "_id": "payment-002",
+    "paymentId": "PAY002",
+    "order": {
+      "_type": "reference", 
+      "_ref": "order-002"
+    },
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "amount": 132000,
+    "method": "cod",
+    "status": "pending",
+    "currency": "VND",
+    "transactionDetails": {
+      "codCollectorId": "COD_COLLECTOR_001",
+      "expectedCollectionTime": "2024-11-15T11:45:00Z"
+    },
+    "createdAt": "2024-11-15T11:02:00Z",
+    "processedAt": null,
+    "failureReason": null,
+    "refundAmount": 0,
+    "fees": {
+      "processingFee": 0,
+      "platformFee": 2640
+    }
+  },
+  {
+    "_type": "payment",
+    "_id": "payment-003",
+    "paymentId": "PAY003",
+    "order": {
+      "_type": "reference",
+      "_ref": "order-003"
+    },
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "amount": 273000,
+    "method": "wallet",
+    "status": "completed",
+    "currency": "VND", 
+    "transactionDetails": {
+      "walletProvider": "MoMo",
+      "walletTransactionId": "MOMO_273000_20241114",
+      "walletBalance": 1500000
+    },
+    "createdAt": "2024-11-14T19:32:00Z",
+    "processedAt": "2024-11-14T19:32:15Z",
+    "failureReason": null,
+    "refundAmount": 0,
+    "fees": {
+      "processingFee": 5460,
+      "platformFee": 5460
+    }
+  },
+  {
+    "_type": "payment",
+    "_id": "payment-004",
+    "paymentId": "PAY004",
+    "order": {
+      "_type": "reference",
+      "_ref": "order-004"
+    },
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "amount": 89000,
+    "method": "card",
+    "status": "failed",
+    "currency": "VND",
+    "transactionDetails": {
+      "cardType": "Mastercard",
+      "cardLastFour": "8901",
+      "authorizationCode": null,
+      "gatewayTransactionId": "TXN_MC_89000_20241113",
+      "processorResponse": "Declined - Insufficient Funds"
+    },
+    "createdAt": "2024-11-13T14:25:00Z",
+    "processedAt": "2024-11-13T14:25:10Z",
+    "failureReason": "Insufficient funds in customer account",
+    "refundAmount": 0,
+    "fees": {
+      "processingFee": 0,
+      "platformFee": 0
+    }
+  },
+  {
+    "_type": "payment", 
+    "_id": "payment-005",
+    "paymentId": "PAY005",
+    "order": {
+      "_type": "reference",
+      "_ref": "order-005"
+    },
+    "customer": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "amount": 450000,
+    "method": "bank",
+    "status": "completed",
+    "currency": "VND",
+    "transactionDetails": {
+      "bankName": "Vietcombank",
+      "accountNumber": "***7890",
+      "transferReference": "VCB_450000_20241112",
+      "bankTransactionId": "BNK_VCB_20241112_7890"
+    },
+    "createdAt": "2024-11-12T16:20:00Z",
+    "processedAt": "2024-11-12T16:35:00Z", 
+    "failureReason": null,
+    "refundAmount": 50000,
+    "fees": {
+      "processingFee": 9000,
+      "platformFee": 9000
+    }
+  }
+]

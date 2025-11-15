@@ -1,0 +1,197 @@
+[
+  {
+    "_type": "notification",
+    "_id": "notification-001",
+    "title": "Order Confirmed!",
+    "message": "Your order QB001 has been confirmed and is being prepared.",
+    "type": "order_update",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "relatedOrder": {
+      "_type": "reference",
+      "_ref": "order-001"
+    },
+    "priority": "normal",
+    "isRead": false,
+    "createdAt": "2024-11-15T11:52:00Z",
+    "readAt": null,
+    "actionUrl": "/orders/QB001",
+    "metadata": {
+      "orderId": "QB001",
+      "estimatedTime": "25 minutes"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-002",
+    "title": "Drone Dispatched! 🚁",
+    "message": "Eagle Swift drone is on its way to pick up your order from Pizza Hut.",
+    "type": "delivery_update",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "relatedOrder": {
+      "_type": "reference",
+      "_ref": "order-001"
+    },
+    "priority": "high",
+    "isRead": false,
+    "createdAt": "2024-11-15T12:15:00Z",
+    "readAt": null,
+    "actionUrl": "/tracking/QB001",
+    "metadata": {
+      "droneId": "DRN001",
+      "droneName": "Eagle Swift",
+      "estimatedPickup": "3 minutes"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-003",
+    "title": "New Order Received",
+    "message": "You have received a new order QB002 from Trần Thị Bình.",
+    "type": "new_order",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-restaurant-001"
+    },
+    "relatedOrder": {
+      "_type": "reference",
+      "_ref": "order-002"
+    },
+    "priority": "high",
+    "isRead": true,
+    "createdAt": "2024-11-15T11:00:00Z",
+    "readAt": "2024-11-15T11:01:00Z",
+    "actionUrl": "/restaurant/orders/QB002",
+    "metadata": {
+      "orderId": "QB002",
+      "customerName": "Trần Thị Bình",
+      "orderValue": "132,000 VND"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-004",
+    "title": "🎉 Special Promotion!",
+    "message": "Get 30% off your next order! Use code DRONE30. Valid until midnight.",
+    "type": "promotion",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "relatedOrder": null,
+    "priority": "low",
+    "isRead": false,
+    "createdAt": "2024-11-15T09:00:00Z",
+    "readAt": null,
+    "actionUrl": "/promotions/DRONE30",
+    "metadata": {
+      "promoCode": "DRONE30",
+      "discount": "30%",
+      "expiryTime": "2024-11-15T23:59:59Z",
+      "minOrderValue": "100000"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-005",
+    "title": "Delivery Completed ✅",
+    "message": "Your order QB003 has been successfully delivered. Enjoy your meal!",
+    "type": "delivery_update",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-customer-001"
+    },
+    "relatedOrder": {
+      "_type": "reference",
+      "_ref": "order-003"
+    },
+    "priority": "normal",
+    "isRead": true,
+    "createdAt": "2024-11-14T20:12:00Z",
+    "readAt": "2024-11-14T20:15:00Z",
+    "actionUrl": "/orders/QB003/feedback",
+    "metadata": {
+      "orderId": "QB003",
+      "deliveryTime": "20:12",
+      "droneUsed": "Eagle Swift"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-006",
+    "title": "⚠️ Drone Maintenance Required",
+    "message": "Storm Falcon (DRN004) requires immediate maintenance. Battery system error detected.",
+    "type": "system",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-admin-001"
+    },
+    "relatedOrder": null,
+    "priority": "urgent",
+    "isRead": true,
+    "createdAt": "2024-11-14T16:00:00Z",
+    "readAt": "2024-11-14T16:02:00Z",
+    "actionUrl": "/admin/drones/DRN004",
+    "metadata": {
+      "droneId": "DRN004",
+      "droneName": "Storm Falcon",
+      "errorCode": "BATTERY_SYSTEM_FAULT",
+      "lastLocation": "Base Station"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-007",
+    "title": "Payment Failed",
+    "message": "Payment for order QB004 was declined. Please update your payment method.",
+    "type": "payment_update",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-customer-002"
+    },
+    "relatedOrder": {
+      "_type": "reference",
+      "_ref": "order-004"
+    },
+    "priority": "high",
+    "isRead": false,
+    "createdAt": "2024-11-13T14:25:10Z",
+    "readAt": null,
+    "actionUrl": "/payment/retry/PAY004",
+    "metadata": {
+      "orderId": "QB004",
+      "paymentId": "PAY004",
+      "failureReason": "Insufficient funds",
+      "retryUrl": "/payment/retry/PAY004"
+    }
+  },
+  {
+    "_type": "notification",
+    "_id": "notification-008",
+    "title": "Fleet Status Update",
+    "message": "Current fleet status: 3 drones active, 1 charging, 1 in maintenance. All delivery zones covered.",
+    "type": "system",
+    "recipient": {
+      "_type": "reference",
+      "_ref": "user-operator-001"
+    },
+    "relatedOrder": null,
+    "priority": "low",
+    "isRead": true,
+    "createdAt": "2024-11-15T06:00:00Z",
+    "readAt": "2024-11-15T06:30:00Z",
+    "actionUrl": "/operator/fleet-dashboard",
+    "metadata": {
+      "activeCount": 3,
+      "chargingCount": 1,
+      "maintenanceCount": 1,
+      "totalFleet": 5,
+      "coverageStatus": "Full Coverage"
+    }
+  }
+]
